@@ -15,7 +15,9 @@ class Bird {
 }
 
 class Sparrow: Bird {
-    
+    override func fly() {
+        print("Sparrow can fly")
+    }
 } // ✅ Works fine, as sparrows can fly
 
 class Penguin: Bird {
