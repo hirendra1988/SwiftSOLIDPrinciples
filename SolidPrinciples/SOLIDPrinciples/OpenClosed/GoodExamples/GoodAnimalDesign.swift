@@ -40,17 +40,7 @@ class GoldFish: Info {
 }
 
 class AnimalsInfo1 {
-    func printData() {
-        let animalsInfo: [Info] = [
-            DomesticCat(name: "Luna"),
-            DomesticCat(name: "Tina"),
-            DomesticCat(name: "Moon"),
-            GoldFish(name: "Ishxan"),
-            GoldFish(name: "Karas"),
-            GoldFish(name: "Sterlec"),
-            GoldFish(name: "fish")
-        ]
-        
+    func printData(animalsInfo: [Info]) {
         for info in animalsInfo {
             print(info.animalInfo())
         }
@@ -60,8 +50,17 @@ class AnimalsInfo1 {
 class GoodAnimalDesign {
     
     init() {
+        let animalsInfo: [Info] = [
+            DomesticCat(name: "Luna"),
+            DomesticCat(name: "Tina"),
+            DomesticCat(name: "Moon"),
+            GoldFish(name: "Ishxan"),
+            GoldFish(name: "Karas"),
+            GoldFish(name: "Sterlec"),
+            GoldFish(name: "fish")
+        ]
         let infoOfAnimals = AnimalsInfo1()
-        infoOfAnimals.printData()
+        infoOfAnimals.printData(animalsInfo: animalsInfo)
     }
     
 }
